@@ -4,12 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.ToString;
 
 @AllArgsConstructor
-@Getter
 @ToString
 public class ArticleForm {
     private String title;
     private String content;
+
     public Article toEntity(){
-        return new Article(title,content);
+        return new Article(null,title, content);
     }
 }

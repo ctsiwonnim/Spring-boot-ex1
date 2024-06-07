@@ -27,6 +27,6 @@ public class ArticleController {
         Article saved = articleRepository.save(article);
         System.out.println(saved.toString());
         return "";
-        //126p까지
+        //144p까지
     }
 }
